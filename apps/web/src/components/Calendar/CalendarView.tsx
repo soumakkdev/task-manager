@@ -121,7 +121,7 @@ export default function CalendarView() {
 	}
 
 	return (
-		<div className="flex flex-col gap-3 h-full">
+		<div className="flex flex-col gap-3 h-full w-full">
 			{renderHeader()}
 			<div className="md:flex md:flex-auto md:flex-col">
 				{renderDays()}
