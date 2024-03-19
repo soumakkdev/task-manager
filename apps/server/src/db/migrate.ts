@@ -15,8 +15,9 @@ async function main() {
 			migrationsFolder: 'drizzle',
 		})
 		console.log('[db] migration successful')
-		process.exit(1)
+		process.exit(0)
 	} catch (error) {
+		console.log('[db] migration failed')
 		console.log(error)
 		process.exit(1)
 	}
